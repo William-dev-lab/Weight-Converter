@@ -1,0 +1,10 @@
+Weight = input("Enter your weight: ")
+Type = input("Was your weight in (P)ounds, or (K)g? ").upper().strip()
+if Type == 'P':
+    Kg = float(Weight) * 0.45359
+    print(f"Your weight in kg is {Kg}")
+elif Type == 'K':
+    Pound = float(Weight) * 2.20462
+    print(f"Your weight in pounds is {Pound}")
+else:
+    print("Error Detected: Please enter one of the options!")
